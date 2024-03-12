@@ -2,13 +2,14 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 
-function exemplo_0() {
+function Atividade_1() {
  return(
     <View style={styles.container}>
-        <Text style={{color: '#fff'}}> Minha Primeira Tela</Text>
+        <Text>Atividade 1</Text>
+        <Text>Luis Otavio</Text>
     </View>
  );
 
 }
 
-export default exemplo_0;
+export default Atividade_1;
