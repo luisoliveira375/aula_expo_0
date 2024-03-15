@@ -10,11 +10,11 @@ const style = StyleSheet.create({
         fontsize: 20,
     },
 
-    },
+    
     texto2: {
-        color: 'green',
+        color: 'red',
         fontsize: 20,
-    {
+    }
 
 });
 
