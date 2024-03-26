@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
         margin: 10,
         color: 'orange',
     },
+    viewmensagem: {
+        borderwidth: 2,
+        borderColor: 'orange',
+        borderRadius: 20,
+    },
+    
 });
 
 export default styles;
