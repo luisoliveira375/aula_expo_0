@@ -1,12 +1,18 @@
-import { StyleSheet } from "react-native";
+import { View, Text } from 'react-native';
+
+import Mensagem from './mensagem';
+
 import styles from './styles';
 
-export default function Atividade_2 () {
+function atividade_2 () {
     return(
-        <View styles={styles.container}>
-            <Text styles={styles.titulo}>
-                Atividade_2
-                </Text>
-            </View>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Atividade_2</Text>
+
+           
+
+        </View>
     );
 }
+
+export default atividade_2;
