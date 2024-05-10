@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
     botaoPress: {
         backgroundColor: 'blue',
     },
+    txtNumero: {
+        fontSize: 35,
+        color:'#673AB7',
+        marginVertical: 10,
+    }
 
 });
 
