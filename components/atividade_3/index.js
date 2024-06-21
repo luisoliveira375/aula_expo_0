@@ -3,60 +3,67 @@ import { View, Text, Pressable } from 'react-native';
 
 import styles from './styles';
 
-function atividade_3() {
+function Atividade_3() {
 
-    const [numero, setNumero] = useState(0);
+   const [numero, setNumero] = useState(0);
 
-
-    function incremento () {
-        setNumero(numero + 1);
+    function adicao (){
+        setNumero(numero +1);
     }
-
-    function menos () {
-        setNumero(numero - 1);
+    function subtracao (){
+        setNumero(numero -1);
     }
-
-    function zero () {
+    function zerar (){
         setNumero(numero - numero);
     }
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>atividade_3</Text>
-          
+            <Text style={styles.titulo}> Atividade 3</Text>
+
+            <View style={styles.container2}>
+            <Pressable
+                onPress={() => adicao() }
+                style={ ({ pressed} ) => pressed ?
+
+                [styles.botao , styles.botaopress]
+                :
+                styles.botao}
+            >
+                <Text style={styles.txtbotao}> +1 </Text>
+                
+            </Pressable>
+
             <Text style={styles.txtNumero}>{numero}</Text>
-
+            
             <Pressable
-                onPress={() => incremento ()}
-                style={({ pressed }) => pressed ?
-                [styles.botao, styles.botaoPress]
-                :
+                onPress={() => subtracao() }
+                 style={ ({ pressed} ) => pressed ?
+
+               [styles.botao , styles.botaopress]
+               :
                 styles.botao}
-            >
-                <Text style={styles.txtBotao}>+1</Text>
+                >
+            <Text style={styles.txtbotao}> -1 </Text>
+    
             </Pressable>
 
-            <Pressable
-                onPress={() => menos ()}
-                style={({ pressed }) => pressed ?
-                [styles.botao, styles.botaoPress]
-                :
-                styles.botao}
-            >
-                <Text style={styles.txtBotao}>-1</Text>
-            </Pressable>
+            </View>
 
             <Pressable
-                onPress={() => zero ()}
-                style={({ pressed }) => pressed ?
-                [styles.botao, styles.botaoPress]
-                :
+                onPress={() => zerar() }
+                 style={ ({ pressed} ) => pressed ?
+
+               [styles.botao , styles.botaopress]
+               :
                 styles.botao}
-            >
-                <Text style={styles.txtBotao}>zerar</Text>
+                >
+            <Text style={styles.txtbotao}> zerar </Text>
+    
             </Pressable>
         </View>
+        
     );
 }
 
-export default atividade_3;
+export default Atividade_3;
